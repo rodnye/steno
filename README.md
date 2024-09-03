@@ -1,3 +1,8 @@
+# steno-js
+
+This is a commonjs module for [steno@4.x](https://www.npmjs.com/package/steno/v/4.0.2). Has been refactored so that it can be used NOT only by ESM code.
+
+
 # Steno [![](http://img.shields.io/npm/dm/steno.svg?style=flat)](https://www.npmjs.org/package/steno) [![Node.js CI](https://github.com/typicode/steno/actions/workflows/node.js.yml/badge.svg)](https://github.com/typicode/steno/actions/workflows/node.js.yml)
 
 > Super fast async file writer with atomic write

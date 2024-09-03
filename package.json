@@ -1,6 +1,6 @@
 {
-  "name": "steno",
-  "version": "4.0.2",
+  "name": "steno-js",
+  "version": "0.0.1",
   "description": "Specialized fast async file writer",
   "keywords": [
     "fs",
@@ -15,18 +15,17 @@
     "writing",
     "safe"
   ],
-  "homepage": "https://github.com/typicode/steno",
+  "homepage": "https://github.com/rodnye/steno",
   "bugs": {
-    "url": "https://github.com/typicode/steno/issues"
+    "url": "https://github.com/rodnye/steno/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/typicode/steno.git"
+    "url": "git+https://github.com/rodnye/steno.git"
   },
-  "funding": "https://github.com/sponsors/typicode",
+  "funding": "https://github.com/sponsors/rodnye",
   "license": "MIT",
-  "author": "Typicode <typicode@gmail.com>",
-  "type": "module",
+  "author": "Rodny Estrada <rrodnyestrada1@gmail.com>", 
   "exports": "./lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -35,9 +34,7 @@
   ],
   "scripts": {
     "test": "node --import tsx/esm --test src/test.ts",
-    "build": "del-cli lib && tsc",
-    "lint": "eslint src --ext .ts --ignore-path .gitignore",
-    "prepare": "husky install",
+    "build": "del-cli lib && tsc", 
     "prepublishOnly": "npm run build",
     "postversion": "git push && git push --tags && npm publish",
     "benchmark": "npm run build && node lib/benchmark.js",
@@ -46,17 +43,11 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@commitlint/prompt-cli": "^17.7.2",
-    "@sindresorhus/tsconfig": "^5.0.0",
+    "@commitlint/prompt-cli": "^17.7.2", 
     "@types/async-retry": "^1.4.8",
-    "@types/node": "^20.8.3",
-    "@typicode/eslint-config": "^1.2.0",
-    "del-cli": "^5.1.0",
-    "husky": "^8.0.3",
+    "@types/node": "^20.8.3", 
+    "del-cli": "^5.1.0", 
     "tsx": "^4.7.0",
     "typescript": "^5.2.2"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
